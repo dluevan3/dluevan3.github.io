@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <script>
+            //define a function. 
+            function calculateTax()
+            {
+                var amount = parseFloat(document.getElementById("amount").value);
+                var taxamount = amount * 0.0825;
+                var total = amount + taxamount;
+                document.getElementById("taxamount").value = taxamount.toFixed(2);
+                document.getElementById("total").value = total.toFixed(2);
+            }
+        </script>
+   </head>
+    <body> 
+        <h1>Tax Calculator</h1>
+        <form>
+            <label for="amount">Purchase Amount:</label><br>
+            <input type="text" id="amount" name="amount"><br><br>
+
+            <label for="taxamount">Tax (8.25%):</label><br>
+            <input type="text" id="taxamount" name="taxamount" disabled><br><br>
+
+            <label for="total">Total Cost (with Tax):</label><br>
+            <input type="text" id="total" name="total" disabled><br><br>
+
+            <input type="button" value="Calculate" onclick="calculateTax()">
+        </form>
+    </body>
+</html>
