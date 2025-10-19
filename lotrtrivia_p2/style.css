@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: bisque;
+  color: goldenrod;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  color: darkgreen;
+  text-align: center;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid brown;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+legend {
+  font-weight: bold;
+  color: brown;
+}
+
+input[type="submit"] {
+  background-color: darkgreen;
+  color: gold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  display: block;
+  margin: 20px auto;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}

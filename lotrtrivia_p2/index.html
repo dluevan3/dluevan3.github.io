@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>Lord of the Rings Trivia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="code.js" defer></script>
+
+
+</head>
+<body>
+  <h1>The Fellowship of the Ring Trivia</h1>
+
+  <form>
+    <fieldset>
+      <legend>1. Who gives Frodo the ring?  </legend>
+      <input type="radio" id="q1a" name="q1" value="a">
+      <label for="q1a"> Gandalf</label><br>
+      <input type="radio" id="q1b" name="q1" value="b">
+      <label for="q1b"> Bilbo</label><br>
+      <input type="radio" id="q1c" name="q1" value="c">
+      <label for="q1c"> Aragorn</label><br>
+      <input type="radio" id="q1d" name="q1" value="d">
+      <label for="q1d"> Elrond</label><br>
+      <div id="q1-feedback" class="feedback"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. What is the name of the ancient sword reforged for Aragorn?</legend>
+      <input type="radio" id="q2a" name="q2" value="a">
+      <label for="q2a"> Mastersword</label><br>
+      <input type="radio" id="q2b" name="q2" value="b">
+      <label for="q2b"> Sting</label><br>
+      <input type="radio" id="q2c" name="q2" value="c">
+      <label for="q2c"> Anduril</label><br>
+      <input type="radio" id="q2d" name="q2" value="d">
+      <label for="q2d"> Narsil</label><br>
+      <div id="q2-feedback" class="feedback"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Which characters are part of the fellowship?</legend>
+      <input type="checkbox" id="q3a" name="q3" value="a">
+      <label for="q3a"> Frodo</label><br>
+      <input type="checkbox" id="q3b" name="q3" value="b">
+      <label for="q3b"> Legolas</label><br>
+      <input type="checkbox" id="q3c" name="q3" value="c">
+      <label for="q3c"> Boromir</label><br>
+      <input type="checkbox" id="q3d" name="q3" value="d">
+      <label for="q3d"> Bilbo</label><br>
+      <div id="q3-feedback" class="feedback"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. Which locations are visited as the fellowship trek through Middle-earth? </legend>
+      <input type="checkbox" id="q4a" name="q4" value="The Shire">
+      <label for="q4a"> The Shire</label><br>
+      <input type="checkbox" id="q4b" name="q4" value="Rivendell">
+      <label for="q4b"> Rivendell</label><br>
+      <input type="checkbox" id="q4c" name="q4" value="Mordor">
+      <label for="q4c"> Mordor</label><br>
+      <input type="checkbox" id="q4d" name="q4" value="Lost Woods">
+      <label for="q4d"> Lost Woods</label><br>
+      <div id="q4-feedback" class="feedback"></div>
+    </fieldset>
+
+    <button type="button" onclick="checkQuiz()">Submit Answers</button>
+    <div id="results" class="feedback"></div>
+  </form>
+</body>
+</html>
