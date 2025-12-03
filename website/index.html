@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nintendo Fan Site</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="#">Nintendo Fan Site</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="characters.html">Characters</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="jumbotron text-center">
+    <h1>Welcome to the Nintendo Fan Site</h1>
+    <p>Celebrating the world gaming </p>
+    <img src="images/logo.jpg" alt="Nintendo Logo" width="200">
+  </header>
+
+  <!-- Lists -->
+  <section class="container">
+    <h2>Top Nintendo Consoles</h2>
+    <ul>
+      <li>Nintendo Switch 2 </li><a href="https://www.nintendo.com/us/store/hardware/#p=1&sort=df&show=0&f=currentSystems&currentSystems=Nintendo+Switch+2" target="_blank">Where to Buy</a>
+      <li>Wii-U</li>
+      <li>GameCube</li>
+      <li>Nintendo 64</li>
+    </ul>
+
+    <h2>Steps to Join Our Fan Club</h2>
+    <ol>
+      <li>Fill out the membership form</li>
+      <li>Choose your favorite character</li>
+      <li>Submit and enjoy exclusive content</li>
+    </ol>
+  </section>
+
+  <!-- Table -->
+  <section class="container">
+    <h2>History of the Beloved Franchise</h2>
+    <iframe width="550" height="300" src="https://www.youtube.com/embed/DLoRd6_a1CI?si=LgSmpYepHFJTn48b&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+
+  <!-- Form -->
+  <section class="container">
+    <h2>Join The Club</h2>
+    <form id="fanForm">
+      <div class="form-group">
+        <label for="username">Name:</label>
+        <input type="text" id="username" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="favorite">Favorite Character:</label>
+        <input type="text" id="favorite" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
